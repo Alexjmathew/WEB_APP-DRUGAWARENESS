@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Drug Awareness</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Kids Drug Awareness</h1>
+        <p>Stay safe, stay healthy!</p>
+    </header>
+
+    <section id="intro">
+        <h2>What Are Drugs?</h2>
+        <p>Drugs are substances that can change how your body or mind works. Some drugs are legal, like medicine or caffeine, but others are illegal, like marijuana, cocaine, and heroin. It's important to learn about drugs and understand the risks involved in using them.</p>
+    </section>
+
+    <section id="effects">
+        <h2>How Drugs Affect Your Body</h2>
+        <p>Drugs can affect your brain and body in many harmful ways. Here's how:</p>
+        <ul>
+            <li><strong>Brain Function:</strong> Drugs can change your brain's ability to think, learn, and make decisions.</li>
+            <li><strong>Physical Health:</strong> Some drugs can damage your heart, lungs, and liver, and lead to long-term health problems.</li>
+            <li><strong>Behavior:</strong> Drugs can make people act in dangerous or unpredictable ways.</li>
+            <li><strong>Relationships:</strong> Drugs can harm friendships and family relationships because of the behavior changes they cause.</li>
+        </ul>
+    </section>
+
+    <section id="stay-safe">
+        <h2>How to Stay Drug-Free</h2>
+        <p>It's important to stay away from drugs. Here are some tips for staying safe and drug-free:</p>
+        <ul>
+            <li><strong>Say "No" Politely:</strong> If someone offers you drugs, you can simply say no. You don’t need to give an excuse.</li>
+            <li><strong>Find Healthy Activities:</strong> Engage in sports, art, music, or other fun activities that keep you busy and happy.</li>
+            <li><strong>Talk to Someone:</strong> If you're feeling pressured or unsure, talk to an adult you trust, like a parent, teacher, or counselor.</li>
+            <li><strong>Stay in Positive Environments:</strong> Spend time with friends who make good choices and support your well-being.</li>
+        </ul>
+    </section>
+
+    <section id="info">
+        <h2>Need Help? Call Now!</h2>
+        <p>If you ever feel unsafe or need help with drugs, call our toll-free number:</p>
+        <div class="number">
+            <h3>1-800-123-DRUG</h3>
+        </div>
+        <p>This number is available 24/7, so don't hesitate to reach out for help. You're not alone!</p>
+    </section>
+
+    <section id="report">
+        <h2>Drug Report Form</h2>
+        <p>If you want to report any suspicious activity or need help, please fill out the form below:</p>
+        <form id="reportForm" onsubmit="submitReport(event)">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required><br>
+            <label for="message">Your Message:</label>
+            <textarea id="message" rows="4" required></textarea><br>
+            <button type="submit">Submit Report</button>
+        </form>
+        <p id="reportResponse"></p>
+    </section>
+
+    <section id="ask">
+        <h2>Ask An Expert</h2>
+        <p>Have questions about drugs or need advice? Ask an expert:</p>
+        <textarea id="question" rows="4" placeholder="Type your question..."></textarea><br>
+        <button onclick="askQuestion()">Submit Question</button>
+        <p id="answer"></p>
+    </section>
+
+    <section id="resources">
+        <h2>Resources for Kids and Parents</h2>
+        <p>If you or someone you know needs help, here are some great resources:</p>
+        <ul>
+            <li><a href="https://www.drugabuse.gov/related-topics/underage-drinking" target="_blank">National Institute on Drug Abuse - For Kids</a></li>
+            <li><a href="https://www.samhsa.gov/find-help/national-helpline" target="_blank">SAMHSA National Helpline</a></li>
+            <li><a href="https://www.nida.nih.gov" target="_blank">National Institute on Drug Abuse</a></li>
+        </ul>
+    </section>
+
+    <section id="game">
+        <h2>Drug Awareness Quiz</h2>
+        <p>Test your knowledge on drug awareness with this quiz!</p>
+        <button onclick="startGame()">Start Quiz</button>
+        <div id="quiz" style="display:none;">
+            <p id="questionText"></p>
+            <button onclick="answer(true)">Yes</button>
+            <button onclick="answer(false)">No</button>
+            <p id="quizResult"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kids Drug Awareness. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
