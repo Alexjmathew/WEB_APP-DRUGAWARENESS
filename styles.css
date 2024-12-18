@@ -87,3 +87,49 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* 3D Animation and Scrolling Effects */
+
+.parallax {
+    background: url('https://source.unsplash.com/random/1600x900') no-repeat center center fixed;
+    background-size: cover;
+    height: 500px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    transform-style: preserve-3d;
+}
+
+.parallax h2 {
+    transform: rotateY(0deg);
+    animation: rotateEffect 4s infinite;
+}
+
+@keyframes rotateEffect {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(15deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+button {
+    transform: translateZ(0);
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
